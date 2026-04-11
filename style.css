@@ -74,7 +74,7 @@ section {
 hero {
   height: 300px;
 
-  background: url("profile.jpg") center/cover no-repeat;
+  background: url("Bannertop.jpg") center/cover no-repeat;
 
   display: flex;
   flex-direction: column;
