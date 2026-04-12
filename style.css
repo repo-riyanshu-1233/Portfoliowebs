@@ -1,7 +1,4 @@
 body {
-  background: red !important;
-}
-body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #020617, #0f172a);
@@ -90,7 +87,7 @@ section {
   max-width: 500px;
   height: 70%;
 
-  background: red;
+  background: url("Banner1.jpg") center/cover no-repeat;
 
   border-radius: 20px;
   filter: brightness(0.7);
