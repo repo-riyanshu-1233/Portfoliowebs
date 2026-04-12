@@ -71,21 +71,26 @@ section {
   padding: 15px;
   border-radius: 12px;
   background: linear-gradient(45deg, #9333ea, #ec4899);
-}
 .hero {
   height: 300px;
-
-  background: url("Banner1.jpg") center/cover no-repeat;
+  position: relative;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  text-align: center;
 }
-.hero::before {
-  display: none;
+
+.hero-bg {
+  position: absolute;
+  width: 90%;
+  height: 70%;
+  background: url("Banner1.jpg") center/cover no-repeat;
+
+  border-radius: 20px;
+  filter: brightness(0.7);
+
+  z-index: 0;
 }
 .hero h1,
 .hero p {
