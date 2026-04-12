@@ -1,4 +1,7 @@
 body {
+  background: red !important;
+}
+body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #020617, #0f172a);
