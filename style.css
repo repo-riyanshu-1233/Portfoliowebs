@@ -5,7 +5,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* 🔥 BODY WITH BLUR BACKGROUND */
 body {
   color: white;
   text-align: center;
@@ -13,7 +12,6 @@ body {
   z-index: 1;
 }
 
-/* FULL BACKGROUND IMAGE + BLUR + OVERLAY */
 body::before {
   content: "";
   position: fixed;
@@ -24,13 +22,11 @@ body::before {
 
   background: 
     linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-    url("Bannertop.jpg") center/cover no-repeat;
+    url("Banner1.jpg") center/cover no-repeat;
 
   filter: blur(6px);
   z-index: -1;
 }
-
-/* 🔥 HERO */
 .hero {
   height: 250px;
 
@@ -40,7 +36,6 @@ body::before {
   align-items: center;
 }
 
-/* HERO TEXT */
 .hero h1 {
   font-size: 28px;
   letter-spacing: 2px;
@@ -50,7 +45,6 @@ body::before {
   color: #94a3b8;
 }
 
-/* SECTIONS (GLASS EFFECT) */
 section {
   margin: 20px;
   padding: 20px;
@@ -60,7 +54,6 @@ section {
   backdrop-filter: blur(10px);
 }
 
-/* LINKS */
 .links a {
   display: block;
   margin: 12px auto;
@@ -81,7 +74,6 @@ section {
   background: linear-gradient(45deg, #22c55e, #4ade80);
 }
 
-/* BUTTON */
 .btn {
   display: inline-block;
   padding: 14px 22px;
@@ -92,8 +84,6 @@ section {
   font-weight: bold;
   margin-top: 10px;
 }
-
-/* EVENTS */
 .events {
   background: rgba(255,255,255,0.05);
 }
@@ -104,13 +94,9 @@ section {
   border-radius: 12px;
   background: linear-gradient(45deg, #9333ea, #ec4899);
 }
-
-/* ANNOUNCEMENT */
 .announcement {
   background: rgba(0,0,0,0.4);
 }
-
-/* FOOTER */
 footer {
   margin-top: 20px;
   padding: 15px;
