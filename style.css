@@ -80,23 +80,27 @@ section {
   justify-content: center;
   align-items: center;
 }
-
 .hero-bg {
   position: absolute;
+
   width: 90%;
+  max-width: 500px;
   height: 70%;
+
   background: url("Banner1.jpg") center/cover no-repeat;
 
   border-radius: 20px;
   filter: brightness(0.7);
 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   z-index: 0;
+
+  display: block;
 }
-.hero h1,
-.hero p {
-  position: relative;
-  z-index: 1;
-}
+
 footer {
   margin-top: 20px;
   padding: 15px;
