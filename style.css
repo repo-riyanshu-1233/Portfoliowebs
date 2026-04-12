@@ -11,7 +11,6 @@ body {
   text-align: center;
 }
 
-/* 🔥 HERO */
 .hero {
   height: 100vh;
   display: flex;
@@ -20,7 +19,6 @@ body {
   align-items: center;
 }
 
-/* 🔥 GLOW CIRCLE */
 .circle {
   width: 120px;
   height: 120px;
@@ -35,8 +33,6 @@ body {
 
   animation: pulse 2s infinite;
 }
-
-/* 🔥 TITLE */
 .title {
   font-size: 32px;
   font-weight: 800;
@@ -50,14 +46,12 @@ body {
   animation: fadeUp 1s ease forwards;
 }
 
-/* SUBTITLE */
 .subtitle {
   margin-top: 10px;
   color: #aaa;
   animation: fadeUp 1.5s ease forwards;
 }
 
-/* BUTTON */
 .cta {
   margin-top: 25px;
   padding: 12px 25px;
@@ -75,7 +69,6 @@ body {
   transform: scale(1.1);
 }
 
-/* ABOUT */
 .about {
   padding: 40px 20px;
 }
@@ -84,7 +77,6 @@ body {
   color: #ff3c78;
 }
 
-/* LINKS */
 .links {
   padding: 40px 20px;
 }
@@ -106,8 +98,6 @@ body {
 .links a:hover {
   background: #ff3c78;
 }
-
-/* 🔥 ANIMATIONS */
 @keyframes pulse {
   0% { box-shadow: 0 0 10px #ff3c78; }
   50% { box-shadow: 0 0 40px #ff3c78; }
