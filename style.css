@@ -5,30 +5,28 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* 🔥 BODY */
+/* 🔥 BODY WITH BLUR BACKGROUND */
 body {
   color: white;
   text-align: center;
   position: relative;
   z-index: 1;
-  overflow-x: hidden;
 }
 
-/* 🔥 ANIMATED BACKGROUND */
+/* FULL BACKGROUND IMAGE + BLUR + OVERLAY */
 body::before {
   content: "";
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 
-  background: linear-gradient(270deg, #ff3c78, #7c3aed, #06b6d4, #ff3c78);
-  background-size: 800% 800%;
+  background: 
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("Bannertop.jpg") center/cover no-repeat;
 
-  animation: gradientMove 15s ease infinite;
-
-  filter: blur(80px);
-  opacity: 0.4;
-
+  filter: blur(6px);
   z-index: -1;
 }
 
@@ -42,35 +40,24 @@ body::before {
   align-items: center;
 }
 
-/* 🔥 NEON TITLE */
+/* HERO TEXT */
 .hero h1 {
-  font-size: 30px;
-  letter-spacing: 3px;
-
-  color: #fff;
-
-  text-shadow:
-    0 0 5px #ff3c78,
-    0 0 10px #ff3c78,
-    0 0 20px #ff3c78,
-    0 0 40px #ff3c78;
-
-  animation: glow 2s infinite alternate;
+  font-size: 28px;
+  letter-spacing: 2px;
 }
 
-/* SUBTITLE */
 .hero p {
-  color: #ccc;
+  color: #94a3b8;
 }
 
-/* SECTIONS */
+/* SECTIONS (GLASS EFFECT) */
 section {
   margin: 20px;
   padding: 20px;
   border-radius: 15px;
 
   background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(10px);
 }
 
 /* LINKS */
@@ -91,22 +78,26 @@ section {
 
 .links a:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 15px #06b6d4;
+  background: linear-gradient(45deg, #22c55e, #4ade80);
 }
 
 /* BUTTON */
 .btn {
   display: inline-block;
   padding: 14px 22px;
-  background: linear-gradient(45deg, #ff3c78, #ff8c42);
-  color: white;
+  background: linear-gradient(45deg, #f59e0b, #facc15);
+  color: black;
   border-radius: 10px;
   text-decoration: none;
-
-  box-shadow: 0 0 15px #ff3c78;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 /* EVENTS */
+.events {
+  background: rgba(255,255,255,0.05);
+}
+
 .event-box {
   margin-top: 15px;
   padding: 15px;
@@ -114,32 +105,15 @@ section {
   background: linear-gradient(45deg, #9333ea, #ec4899);
 }
 
+/* ANNOUNCEMENT */
+.announcement {
+  background: rgba(0,0,0,0.4);
+}
+
 /* FOOTER */
 footer {
   margin-top: 20px;
   padding: 15px;
-  background: rgba(0,0,0,0.5);
-}
-
-/* 🔥 ANIMATIONS */
-
-/* gradient move */
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* neon glow pulse */
-@keyframes glow {
-  from {
-    text-shadow:
-      0 0 5px #ff3c78,
-      0 0 10px #ff3c78;
-  }
-  to {
-    text-shadow:
-      0 0 20px #ff3c78,
-      0 0 40px #ff3c78;
-  }
+  font-size: 14px;
+  background: rgba(0,0,0,0.6);
 }
