@@ -1,65 +1,41 @@
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
 body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #020617, #0f172a);
   color: white;
   text-align: center;
 }
-.hero {
-  height: 250px;
 
-  background: url("Banner1.jpg") center/cover no-repeat;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  position: relative;
+header {
+  padding: 50px 20px;
 }
-.hero::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
-}
-.hero h1 {
-  position: relative;
-  z-index: 1;
-  font-size: 28px;
+
+h1 {
+  font-size: 30px;
   letter-spacing: 2px;
 }
 
-.hero p {
-  position: relative;
-  z-index: 1;
+p {
   color: #94a3b8;
 }
+
 section {
   margin: 20px;
   padding: 20px;
   border-radius: 15px;
-
   background: rgba(255,255,255,0.05);
   backdrop-filter: blur(10px);
 }
+
 .links a {
   display: block;
   margin: 12px auto;
   padding: 14px;
   width: 85%;
   max-width: 320px;
-
   border-radius: 12px;
   text-decoration: none;
   color: white;
-
   background: linear-gradient(45deg, #3b82f6, #06b6d4);
   transition: 0.3s;
 }
@@ -68,6 +44,7 @@ section {
   transform: scale(1.05);
   background: linear-gradient(45deg, #22c55e, #4ade80);
 }
+
 .btn {
   display: inline-block;
   padding: 14px 22px;
@@ -78,7 +55,14 @@ section {
   font-weight: bold;
   margin-top: 10px;
 }
+
+.announcement {
+  background: linear-gradient(45deg, #1e293b, #0f172a);
+}
 .events {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
   background: rgba(255,255,255,0.05);
 }
 
@@ -87,10 +71,32 @@ section {
   padding: 15px;
   border-radius: 12px;
   background: linear-gradient(45deg, #9333ea, #ec4899);
-}
+.hero {
+  height: 300px;
 
-.announcement {
-  background: linear-gradient(45deg, #1e293b, #0f172a);
+  background:"Bannertop.jpg" center/cover no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  position: relative;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+.hero h1,
+.hero p {
+  position: relative;
+  z-index: 1;
 }
 footer {
   margin-top: 20px;
