@@ -87,7 +87,7 @@ section {
   max-width: 500px;
   height: 70%;
 
-  background: url("banner1.jpg") center/cover no-repeat;
+  background: url("https://picsum.photos/800/400") center/cover no-repeat;
 
   border-radius: 20px;
   filter: brightness(0.7);
