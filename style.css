@@ -10,8 +10,6 @@ body {
   color: white;
   text-align: center;
 }
-
-/* HERO */
 .hero {
   height: 100vh;
   display: flex;
@@ -25,7 +23,7 @@ body {
   width: 90%;
   max-width: 500px;
   height: 70%;
-  background: url(banner1.jpg) center/cover no-repeat;
+  background: url(banner2.jpg) center/cover no-repeat;
   border-radius: 20px;
   filter: brightness(0.6);
 }
@@ -34,8 +32,6 @@ body {
   position: relative;
   z-index: 2;
 }
-
-/* BUTTON */
 button {
   margin-top: 15px;
   padding: 10px 20px;
@@ -45,8 +41,6 @@ button {
   border-radius: 8px;
   cursor: pointer;
 }
-
-/* SECTIONS */
 section {
   margin: 20px;
   padding: 20px;
@@ -62,8 +56,6 @@ section.show {
   transform: translateY(0);
   opacity: 1;
 }
-
-/* LINKS */
 .links a {
   display: block;
   margin: 10px auto;
@@ -79,8 +71,6 @@ section.show {
 .links a:hover {
   transform: scale(1.05);
 }
-
-/* BUTTON STYLE */
 .btn {
   display: inline-block;
   padding: 12px 20px;
@@ -89,8 +79,6 @@ section.show {
   border-radius: 10px;
   text-decoration: none;
 }
-
-/* FOOTER */
 footer {
   padding: 15px;
   background: #020617;
