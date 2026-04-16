@@ -1,4 +1,4 @@
-const text = "EDITION INDUSTRIES 🚀";
+const text = "EDITION INDUSTRIES";
 let i = 0;
 
 function typeEffect() {
