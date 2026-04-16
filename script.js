@@ -9,9 +9,6 @@ function typeEffect() {
   }
 }
 typeEffect();
-
-
-// 🎬 Scroll Animation
 const sections = document.querySelectorAll('section');
 
 window.addEventListener('scroll', () => {
@@ -25,8 +22,6 @@ window.addEventListener('scroll', () => {
   });
 });
 
-
-// ⚡ Smooth Scroll
 function scrollToSection(id) {
   document.getElementById(id).scrollIntoView({
     behavior: 'smooth'
